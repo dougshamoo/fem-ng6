@@ -2,13 +2,15 @@ import _ from 'lodash';
 
 export class BlogController {
   constructor() {
-    this.message = 'All sorts of Angular stuff';
+    this.message = 'The latest from the blog';
 
-    this.posts = _.times(9, i => {
+    this.posts = _.times(9, ()=> {
       return {
-        title: `Post ${i}`,
-        author: `Doug Shamoo`
+        author: 'Casidy James',
+        title: 'What\'s new in Angular 3'
       };
     });
   }
 }
+
+
